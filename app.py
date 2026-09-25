@@ -40,6 +40,7 @@ def init_connection():
         f"Encrypt=yes;"
         f"TrustServerCertificate=yes;"
         f"Connection Timeout=30;"
+        f"MARS_Connection=yes;"  # <-- LÍNEA QUE DEBES AGREGAR
     )
     return pyodbc.connect(conn_str)
 
